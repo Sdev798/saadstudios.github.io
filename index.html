@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saad Studios | Jabir Saad</title>
+  <meta name="description" content="Saad Studios — portfolio of Jabir Saad, web developer and freelancer.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <div class="glow" id="glow"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#home" class="logo">Saad<span>Studios</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">&#9776;</button>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero" id="home">
+    <p class="hello">Hi there, I'm</p>
+    <h1>Jabir <span class="accent">Saad</span></h1>
+    <h2>I'm a <span id="typing"></span><span class="cursor">|</span></h2>
+    <p class="hero-text">I build fast, modern and good-looking websites for clients around the world.</p>
+    <div class="hero-btns">
+      <a href="#portfolio" class="btn">See my work</a>
+      <a href="#contact" class="btn btn-outline">Hire me</a>
+    </div>
+  </header>
+
+  <!-- Stats -->
+  <section class="stats reveal">
+    <div class="stat"><span class="count" data-target="50">0</span>+<p>Projects done</p></div>
+    <div class="stat"><span class="count" data-target="40">0</span>+<p>Happy clients</p></div>
+    <div class="stat"><span class="count" data-target="3">0</span>+<p>Years experience</p></div>
+    <div class="stat"><span class="count" data-target="5">0</span>&#9733;<p>Fiverr rating</p></div>
+  </section>
+
+  <!-- About -->
+  <section class="section reveal" id="about">
+    <h2 class="title">About <span class="accent">Me</span></h2>
+    <p class="about-text">
+      [Your summary goes here. Who you are, what you do, and why clients should work with you.
+      Send me your summary and I'll fill this in.]
+    </p>
+    <div class="skills">
+      <div class="skill"><span>HTML</span><div class="bar"><div class="fill" data-width="95"></div></div></div>
+      <div class="skill"><span>CSS</span><div class="bar"><div class="fill" data-width="90"></div></div></div>
+      <div class="skill"><span>JavaScript</span><div class="bar"><div class="fill" data-width="80"></div></div></div>
+      <div class="skill"><span>UI Design</span><div class="bar"><div class="fill" data-width="75"></div></div></div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section reveal" id="services">
+    <h2 class="title">What I <span class="accent">Do</span></h2>
+    <div class="grid">
+      <div class="card tilt">
+        <div class="icon">&#128187;</div>
+        <h3>Web Development</h3>
+        <p>Responsive websites built with clean HTML, CSS and JavaScript.</p>
+      </div>
+      <div class="card tilt">
+        <div class="icon">&#127912;</div>
+        <h3>Web Design</h3>
+        <p>Modern layouts that look great on phones, tablets and desktops.</p>
+      </div>
+      <div class="card tilt">
+        <div class="icon">&#128295;</div>
+        <h3>Fixes &amp; Tweaks</h3>
+        <p>Bug fixes, speed improvements and updates to existing sites.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="section reveal" id="portfolio">
+    <h2 class="title">My <span class="accent">Portfolio</span></h2>
+    <div class="filters">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="web">Websites</button>
+      <button class="filter" data-filter="design">Design</button>
+    </div>
+    <div class="grid" id="projects">
+      <div class="project tilt" data-cat="web">
+        <div class="thumb" style="--c1:#1dbf73;--c2:#0b6e4f">01</div>
+        <h3>Project One</h3>
+        <p>Short description of the project.</p>
+        <a href="#" class="link">View project &rarr;</a>
+      </div>
+      <div class="project tilt" data-cat="design">
+        <div class="thumb" style="--c1:#7b61ff;--c2:#3a2d8f">02</div>
+        <h3>Project Two</h3>
+        <p>Short description of the project.</p>
+        <a href="#" class="link">View project &rarr;</a>
+      </div>
+      <div class="project tilt" data-cat="web">
+        <div class="thumb" style="--c1:#ff8a3d;--c2:#a3420b">03</div>
+        <h3>Project Three</h3>
+        <p>Short description of the project.</p>
+        <a href="#" class="link">View project &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section reveal" id="contact">
+    <h2 class="title">Let's <span class="accent">Work Together</span></h2>
+    <p class="about-text">Have a project in mind? Message me on Fiverr or send me an email.</p>
+    <div class="hero-btns center">
+      <a href="https://www.fiverr.com/" target="_blank" rel="noopener" class="btn">Hire me on Fiverr</a>
+      <a href="mailto:you@example.com" class="btn btn-outline">Send an email</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Saad Studios. All rights reserved.</p>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">&uarr;</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
